@@ -14,8 +14,17 @@ ANSWERS = DATA / "answers.json"
 DOCS = DATA / "documents"
 
 app = FastAPI(title="TruthTrace API")
-app.add_middleware(CORSMiddleware, allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"],
-                   allow_methods=["*"], allow_headers=["*"])
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+        "https://truthtrace-kfy6xsxrq-bhumi187.vercel.app/",
+    ],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 class AnalyzeRequest(BaseModel):
