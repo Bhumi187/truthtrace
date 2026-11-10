@@ -1,5 +1,6 @@
 export async function api(path, opts) {
-  const r = await fetch(path, opts);
+  const API_BASE = import.meta.env.VITE_API_URL || "";
+  const r = await fetch(`${API_BASE}${path}`, opts);
   const body = await r.json().catch(() => ({}));
   if (!r.ok) throw new Error(body.detail || `Request failed (${r.status})`);
   return body;
