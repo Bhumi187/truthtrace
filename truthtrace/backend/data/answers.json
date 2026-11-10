@@ -1,0 +1,29 @@
+[
+  {
+    "id": "a1",
+    "question": "What is the scholarship application deadline?",
+    "answer": "The deadline to apply for the scholarship is 20 November.",
+    "generated_at": "2026-10-01",
+    "depends_on": [{"fact_key": "deadline", "value": {"day": 20, "month": 11, "year": null},
+      "evidence": {"doc": "scholarship_policy_v1", "line": 4, "text": "The scholarship application deadline is 20 November."}}],
+    "corrected_template": "The deadline to apply for the scholarship is {deadline}."
+  },
+  {
+    "id": "a2",
+    "question": "What CGPA do I need to be eligible for the scholarship?",
+    "answer": "You need a minimum CGPA of 7.0 to be eligible.",
+    "generated_at": "2026-10-01",
+    "depends_on": [{"fact_key": "min_cgpa", "value": 7.0,
+      "evidence": {"doc": "scholarship_policy_v1", "line": 7, "text": "Applicants must have a minimum CGPA of 7.0."}}],
+    "corrected_template": "You need a minimum CGPA of {min_cgpa} to be eligible."
+  },
+  {
+    "id": "a3",
+    "question": "Which documents do I need to submit?",
+    "answer": "You need to submit your marksheets and admission proof.",
+    "generated_at": "2026-10-01",
+    "depends_on": [{"fact_key": "required_documents", "value": ["admission proof", "marksheet"],
+      "evidence": {"doc": "scholarship_policy_v1", "line": 10, "text": "Required documents: marksheets and admission proof."}}],
+    "corrected_template": "You need to submit the following documents: {required_documents}."
+  }
+]

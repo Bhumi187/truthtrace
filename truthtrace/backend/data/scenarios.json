@@ -1,0 +1,34 @@
+[
+  {
+    "id": "scholarship",
+    "name": "Scholarship policy",
+    "description": "Application deadline changes",
+    "old_document": "scholarship_policy_v1",
+    "new_document": "scholarship_policy_v2",
+    "answers_file": "answers.json"
+  },
+  {
+    "id": "hr",
+    "name": "HR policy",
+    "description": "Annual leave entitlement changes",
+    "old_document": "hr_policy_v1",
+    "new_document": "hr_policy_v2",
+    "answers_file": "hr_answers.json"
+  },
+  {
+    "id": "ecommerce",
+    "name": "E-commerce",
+    "description": "Return window changes",
+    "old_document": "ecommerce_returns_v1",
+    "new_document": "ecommerce_returns_v2",
+    "answers_file": "ecommerce_answers.json"
+  },
+  {
+    "id": "reimbursement",
+    "name": "Reimbursement policy",
+    "description": "Monthly allowance changes",
+    "old_document": "reimbursement_policy_v1",
+    "new_document": "reimbursement_policy_v2",
+    "answers_file": "reimbursement_answers.json"
+  }
+]

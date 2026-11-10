@@ -1,0 +1,20 @@
+[
+  {
+    "id": "ecom-a1",
+    "question": "How long do customers have to return an eligible item?",
+    "answer": "Eligible items may be returned within 30 days of delivery.",
+    "generated_at": "2026-10-01",
+    "depends_on": [
+      {
+        "fact_key": "return_window_days",
+        "value": 30,
+        "evidence": {
+          "doc": "ecommerce_returns_v1",
+          "line": 4,
+          "text": "Eligible items may be returned within 30 days of delivery."
+        }
+      }
+    ],
+    "corrected_template": "Eligible items may be returned within {return_window_days} of delivery."
+  }
+]

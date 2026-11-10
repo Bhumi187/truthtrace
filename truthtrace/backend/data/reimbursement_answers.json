@@ -1,0 +1,23 @@
+[
+  {
+    "id": "reimburse-a1",
+    "question": "What is the monthly work-from-home allowance?",
+    "answer": "Employees receive INR 5,000 per month as a work-from-home allowance.",
+    "generated_at": "2026-10-01",
+    "depends_on": [
+      {
+        "fact_key": "allowance_amount",
+        "value": {
+          "currency": "INR",
+          "amount": 5000
+        },
+        "evidence": {
+          "doc": "reimbursement_policy_v1",
+          "line": 4,
+          "text": "Employees receive a monthly work-from-home allowance of INR 5,000."
+        }
+      }
+    ],
+    "corrected_template": "Employees receive {allowance_amount} per month as a work-from-home allowance."
+  }
+]

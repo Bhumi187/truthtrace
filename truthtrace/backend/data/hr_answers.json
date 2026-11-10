@@ -1,0 +1,20 @@
+[
+  {
+    "id": "hr-a1",
+    "question": "How many days of annual leave does a full-time employee receive?",
+    "answer": "Full-time employees receive 20 days of annual leave each calendar year.",
+    "generated_at": "2026-10-01",
+    "depends_on": [
+      {
+        "fact_key": "annual_leave_days",
+        "value": 20,
+        "evidence": {
+          "doc": "hr_policy_v1",
+          "line": 4,
+          "text": "Full-time employees are entitled to 20 days of annual leave per calendar year."
+        }
+      }
+    ],
+    "corrected_template": "Full-time employees receive {annual_leave_days} of annual leave each calendar year."
+  }
+]
